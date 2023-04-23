@@ -1,0 +1,45 @@
+body {
+    max-width: 600px;
+    margin: auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border: solid;
+    border-radius: 10px;
+    background-color: darkblue;
+}
+
+img {
+    padding: 1rem;
+    align-self: center;
+}
+
+header h1 {
+    color: blanchedalmond;
+    align-self: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+}
+
+footer {
+    margin-top: 15px;
+    border: solid;
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+footer p {
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.modifieddate {
+    color: coral;
+}
+
+h2, main {
+    border-bottom: solid darkgrey;
+}
+
