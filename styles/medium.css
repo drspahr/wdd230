@@ -1,0 +1,40 @@
+@media only screen and (min-width: 30.9em) {
+    header {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        border: solid;
+        border-radius: 10px;
+        background-color: navy;
+    }
+   
+    header h1 {
+        color: blanchedalmond;
+        align-self: center;
+        padding: 2rem;
+        font-size: 3rem;
+    }
+
+    img {
+        padding: 1rem;
+        align-self: center;
+        border-radius: 20%;
+    }
+
+    ul {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        margin-top: 15px;
+        border: solid;
+        background-color: navy;
+        border-radius: 10px;
+    }
+
+    footer p {
+        color: blanchedalmond;
+        text-align: center;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: .9rem;
+    }
+}
