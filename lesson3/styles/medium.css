@@ -1,0 +1,21 @@
+@media only screen and (min-width: 37.5em) {
+    nav, footer {
+        flex-direction: row;
+        flex: 1 1 auto;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    footer p {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+}
