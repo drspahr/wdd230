@@ -1,4 +1,4 @@
-@media only screen and (min-width: 55em) {
+@media only screen and (min-width: 67.375em) {
     nav button {
         display: none;
     }
@@ -10,19 +10,24 @@
     }
 
     #title {
-        padding-left: 5rem;
+        padding-left: 2rem;
+    }
+
+    header h1 {
+        font-size: 4.5rem;
     }
     header h2 {
-        font-size: 1.1rem;
+        font-size: 1.8rem;
     }
 
     #hutch {
         display: block;
         grid-column: 3/4;
         margin-left: 3rem;
-        width: 20rem;
+        width: 25rem;
         padding-top: .3rem;
         padding-left: 5rem;
+        border-top-right-radius: 18px;
     }
 
     time {
@@ -30,14 +35,17 @@
         grid-row: 3/4;
         text-align: right;
         padding: .3rem;
+        padding-right: 1rem;
         color: #FAE275;    
     }
 
     nav {
         display: grid;
-        grid-template-columns: 1fr 20%;
+        grid-template-columns: 1fr 10%;
         padding-top: .3rem;
         padding-bottom: .3rem;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
 
     #mainNav {
@@ -61,12 +69,12 @@
 
     nav ul li {
         display: inline-block;
-        margin-right: 2rem;
-        padding-left: 2rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
     }
 
     main {
-        grid-template-columns: 15% 70% 15%;
+        grid-template-columns: 25% 50% 25%;
     }
 
     #hero {
@@ -84,14 +92,40 @@
         grid-row: 2/3;
     }
 
+    #join {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
     #news {
-        grid-column: 1/3;
+        grid-column: 2/3;
         grid-row: 3/4;
     }
 
     #spots {
+        grid-template-columns: 1fr;
         grid-column: 3/4;
         grid-row: 1/4;
+    }
+
+    #spot h4 {
+        grid-row: 1/2;
+    }
+
+    .spot1 {
+        grid-row: 2/3;
+    }
+
+    .spot2 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .spot3 {
+        display: block;
+        grid-row: 4/5;
+        /* border: 0.5px solid; */
+        padding: 0.3rem;
     }
 
 }
