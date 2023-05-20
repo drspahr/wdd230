@@ -195,6 +195,19 @@ main p {
     position: relative;
 }
 
+#credit {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    font-family: "Prompt", sans-serif;
+    font-size: .5rem;
+    color: #FAE275;
+}
+
+#credit a {
+    color: #FAE275;
+}
+
 #hero .action {
     position: absolute;
     bottom: 20px;
