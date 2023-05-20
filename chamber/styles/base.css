@@ -23,7 +23,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 0;
-    background-color: #8D9D90;
+    background-image: linear-gradient(#738e79, #8D9D90);
     position: relative;
 }
 
@@ -39,6 +39,7 @@ header {
 .banBtn {
     border: none;
     background: #FAE275;
+    cursor: pointer;
 }
 
 #logo {
@@ -79,7 +80,8 @@ nav {
     margin: 0;
     text-align: center;
     padding: 0;
-    background-color: #373795;
+    /* background-color: #373795; */
+    background-image: linear-gradient(to right,#A4B6A8, #5B7160);
 }
 
 nav button {
@@ -88,6 +90,7 @@ nav button {
     font-size: 3rem;
     text-align: center;
     color: #D2D0D3;
+    cursor: pointer;
 }
 
 .social {
@@ -157,7 +160,6 @@ main {
 }
 
 main section, #spots, #join {
-    /* border: .5px solid #373795; */
     border-radius: 18px;
     margin: 0.5rem;
     padding: 0 0.5rem;
@@ -217,19 +219,30 @@ main p {
 }
 
 #spots {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: .8rem;
 }
 
 .color {
     background-color: #738e79;
     border-radius: 18px;
-    padding: .3rem;
+    padding-bottom: .3rem;
     box-shadow: 3px 3px 5px #FAE275;
 
+}
+
+.pspot {
+    font-size: 1.2rem;
+}
+
+.contact {
+    font-size: 1rem;
+    line-height: .3rem;
+    border-top: 1px solid #FAE275;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .spot3 {
@@ -253,7 +266,7 @@ main p {
 footer {
     display: block;
     text-align: center;
-    background-color: #8D9D90;
+    background-image: linear-gradient(#8D9D90, #738e79);
     border-radius: 18px;
 }
 

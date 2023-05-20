@@ -10,6 +10,7 @@ header {
     /* border: solid; */
     /* border-radius: 10px; */
     background-color: navy;
+    background-image: linear-gradient(navy, #6564DB);
 }
 
 img {
@@ -43,6 +44,7 @@ footer {
     /* margin-top: 15px; */
     /* border: solid; */
     background-color: navy;
+    background-image: linear-gradient(#6564DB, navy);
     /* border-radius: 10px; */
 }
 

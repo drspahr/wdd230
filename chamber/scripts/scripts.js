@@ -23,3 +23,8 @@ function displayChange () {
     document.querySelector(".banner").style.display="block";
 }
 
+const clsBan = document.querySelector(".banBtn");
+clsBan.addEventListener('click', () => {
+    document.querySelector(".banner").style.display="none";
+});
+
