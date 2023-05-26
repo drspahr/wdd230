@@ -15,17 +15,20 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
+
+
 <body>
+
     <header>
         <div class="banner">
             <p>&#129309; Come join us for the chamber meet and greet Wednesday at 7:00 p.m. <button class="banBtn">&#10060;</button></p>
         </div>
-        <img id="logo" src="images/CoCLarge.png" alt="Hutchinson Chamber of Commerce Logo">
+        <img id="logo" src="images/CoCLarge.webp" alt="Hutchinson Chamber of Commerce Logo">
         <div id="title">    
             <h1>Hutchinson</h1>
             <h2>Chamber of Commerce</h2>
         </div>
-        <img id="hutch" src="images/downtownhutchsm.jpg" alt="Downtown Hutchinson, Kansas">
+        <img id="hutch" src="images/downtownhutchsm.webp" alt="Downtown Hutchinson, Kansas">
         <time></time>
         <nav>
             <button id="menuBtn"><span>&#9776;</span><span>X</span></button>
@@ -46,34 +49,41 @@
             </ul>
         </nav>
     </header>
+
+
     <main class="mainContent">
         <section id="hero">
             <h3>Welcome to Hutchinson</h3>
             <div class="image">
-                <img src="images/hutchstatefair2014.jpeg" alt="2014 Kansas State Fair">
+                <img src="images/wdd230-org.jpg" alt="meeting" sizes="100vw"
+                    srcset="images/wdd230-org400.jpg 200w,
+                            images/wdd230-org600.jpg 600w, 
+                            images/wdd230-org1080.jpg 1060w">
+                <!-- <img src="images/hutchstatefair2014.jpeg" alt="2014 Kansas State Fair"> -->
                 <button class="action">Join the Chamber</button>
                 <p id="credit">Photo By: Ichabod | <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">License</a></p>
             </div>
         </section>
+
         <section id="event" class="style">
             <h3>Grand Opening</h3>
             <p>Atwoods</p>
             <p>Come celebrate the Grand Opening of Atwoods Wednesday at 4:00 p.m.</p>
         </section>
+
         <section id="weather" class="style">
             <h3>Weather</h3>
-            <p>&#127781;</p>
-            <p>57&deg;F</p>
+            <p>&#127781; <span id="temp">57</span>&deg; F</p>
             <p>Partly Cloudy</p>
-            <p>Wind Speed:</p>
-            <p>20 mph</p>
-            <p>Wind Chill:</p>
-            <p>N/A</p>
+            <p>Wind Speed: <span id="ws">20</span> mph</p>
+            <p>Wind Chill: <span id="wc"></span></p>
         </section>
+
         <section id="news" class="style">
             <h3>News Release</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, debitis excepturi velit reiciendis dolore provident deleniti suscipit, possimus, ad sed ipsum explicabo amet perspiciatis quisquam numquam maxime odio. Laboriosam, repudiandae!</p>
         </section>
+
         <div id="spots" class="style">
             <div class="spot1 color">
                 <h3>Spotlight1</h3>
@@ -103,13 +113,16 @@
                 </div>
             </div>
         </div>
+
         <div id="join" class="style">
             <button class="joinBtn">Join Us!</button>
             <p>Discover how to join the chamber of commerce and what benefits your organization can receive!</p>
         </div>
     </main>
+
+
     <footer>
-        <img class="ftlogo" src="images/cocsmall.png" alt="Hutchinson Chamber of Commerce logo">
+        <img class="ftlogo" src="images/cocsmall.webp" alt="Hutchinson Chamber of Commerce logo">
         <div id="contact">    
             <p>Contact</p>
             <p>Hutchinson/Reno County Chamber of Commerce</p>
@@ -120,5 +133,6 @@
         <p class="ident">&copy; <span class="year"></span> | David G. Spahr | WDD 230 Project | Last Updated: <span class="moddate"></span></p>
     </footer>
     <script src="scripts/scripts.js"></script>
-</body>
+    <script src="scripts/windchill.js"></script>
+    </body>
 </html>
