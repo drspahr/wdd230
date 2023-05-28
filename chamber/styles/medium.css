@@ -102,10 +102,12 @@
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
     }
 
     .ftlogo {
         grid-column: 1/2;
+        width: 50%;
     }
 
     #contact {
