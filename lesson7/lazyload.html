@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Loading</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <div id="imgs">
+        <h1>Progressive Loading Images</h1>
+        <img src="images/placeholder.webp" data-src="images/fam.webp" alt="Family" width="300" height="400"> 
+        <img src="images/placeholder.webp" data-src="images/momsboys.webp" alt="Family" width="300" height="400">
+        <img src="images/placeholder.webp" data-src="images/parallellanding.webp" alt="Family" width="300" height="400">
+        <img src="images/placeholder.webp" data-src="images/pittsburgh.webp" alt="Family" loading="lazy" width="300" height="400">
+        <img src="images/placeholder.webp" data-src="images/redisgood.webp" alt="Family" loading="lazy" width="300" height="400">
+        <img src="images/placeholder.webp" data-src="images/c177checkout.webp" alt="Family" loading="lazy" width="300" height="400">
+    </div>
+<script src="scripts/script.js" defer></script>
+</body>
+</html>
