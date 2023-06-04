@@ -152,6 +152,7 @@ nav ul.open {
     font-size: 2.0rem;
 }
 
+/* Main page */
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -245,7 +246,6 @@ main p {
     border-radius: 18px;
     padding-bottom: .3rem;
     box-shadow: 3px 3px 5px #FAE275;
-
 }
 
 .pspot {
@@ -275,9 +275,58 @@ main p {
     border-radius: 15px;
     background-color: #373795;
     color: #D2D0D3;
-
 }
 
+/* Main Discover */
+#discover h1 {
+    text-align: center;
+}
+
+.imgs img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+.cap {
+    display: none;
+}
+
+#info figure {
+    display: none;
+}
+
+#info section {
+    text-align: center;
+}
+
+#stats {
+    background-color: #8D9D90;
+    padding: 1.3rem;
+}
+
+.item {
+    line-height: .3rem;
+    padding: .2rem;
+    margin-top: .4rem;
+    background-color: #738e79;
+    border-radius: 20px;
+    color: #FAE275;
+    box-shadow: 3px 3px 5px #FAE275;
+    font-size: 1.2rem;
+}
+
+#demo {
+    display: none;
+}
+
+/* Footer */
 footer {
     display: block;
     text-align: center;
@@ -315,6 +364,6 @@ footer div p {
     font-family: "Prompt", sans-serif;
 }
 
-.moddate {
+.moddate, .visits, .lvisit {
     color: #373795;
 }

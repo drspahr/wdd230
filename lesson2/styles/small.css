@@ -38,6 +38,10 @@ main section img {
     border: 1px solid black;
 }
 
+main section div {
+    background-color: #7D9FC2;
+}
+
 main section h3 {
     background-color: #7D9FC2;
     padding: .5rem;
