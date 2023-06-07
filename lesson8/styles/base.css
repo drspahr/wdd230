@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  table {
+    margin: 10px auto;
+    border: thin solid lightgrey;
+    box-shadow: 0 0 10px rgb(103, 103, 183);
+    border-collapse: collapse;
+  }
+  
+  caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: gray;
+    font-size: .85rem;
+  }
+  
+  .titlehead {
+    background-color: navy;
+    color: white;
+  }
+  
+  th, td {
+    padding: 7px 15px;
+  }
+  
+  .headings, td {
+    border: 1px solid lightgrey;
+  }
+  
+  .headings {
+    background-color: #375379;
+    color: white;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: hsl(0, 0%, 93%, 1);
+  }
