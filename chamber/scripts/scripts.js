@@ -52,6 +52,7 @@ const dayCount = document.querySelector(".lvisit");
 
 pDay = Number(window.localStorage.getItem("pDay-ls"));
 let dayDiff = (vtoday - pDay) / msToDays;
+localStorage.setItem("dayDiff-ls", dayDiff)
 
 if (dayDiff < 1) {
     dayCount.textContent = 0;

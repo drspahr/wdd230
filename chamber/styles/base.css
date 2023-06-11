@@ -326,6 +326,78 @@ figcaption {
     display: none;
 }
 
+/* Main Join */
+form {
+    max-width: 400px;
+    background-color: #8D9D90;
+    padding: .5rem 0 .5rem 0;
+    border-radius: 20px;
+    box-shadow: 0 0 9px #373795;
+}
+
+form fieldset {
+    max-width: 360px;
+    margin: 2rem 1.5rem 2rem 1.5rem;
+    border: none;
+    padding: .5rem 2% 1rem 2%;   
+    background-color: #738e79; 
+    border-radius: 20px;
+    box-shadow: 0 0 9px #FAE275;
+}
+
+form label.top, form label.darea {
+    display: block;
+    padding-top: 1rem;
+    color: #FAE275;
+}
+
+.top input, .darea textarea{
+    display: block;
+    padding: .75rem;
+    width: 90%;
+    max-width: 20rem;
+    border-radius: 10px;
+    background-color: #D2D0D3;
+    color: #373795;
+}
+
+.darea textarea {
+    height: 8rem;
+}
+
+form label.radio {
+    display: block;
+    padding: .75rem;
+    color: #FAE275;
+}
+
+form input.subBtn {
+    border: none;
+    padding: .75rem 1.5rem;
+    margin: 1rem 1.5rem 1rem 1.5rem;
+    width: 100%;
+    max-width: 21.5rem;
+    border-radius: 20px;
+    background-color: #373795;
+    color: #D2D0D3;
+    box-shadow: 0 0 9px #D2D0D3;
+}
+
+form label.top input:required {
+    border-left: 10px solid rgb(103, 40, 40);
+}
+
+form label.top input:required:valid {
+    border-left: none;
+}
+
+/* Thank you Page */
+#thankyou {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Footer */
 footer {
     display: block;
