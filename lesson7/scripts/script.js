@@ -1,4 +1,4 @@
-const imagesToLoad = document.querySelectorAll("  [data-src]");
+const imagesToLoad = document.querySelectorAll("[data-src]");
 
 function ldImages (image) {
     image.setAttribute("src", image.getAttribute("data-src"));
@@ -7,7 +7,7 @@ function ldImages (image) {
 };
 
 const imageOptions = {
-    threshold: .6,
+    threshold: .7,
     rootMargin: "0px 0px 50px 0px"
 };
 

@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(65, 102, 65);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: .3rem;
+    color: #FAE275;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: .7rem;
+    background-color: rgb(65, 102, 65);
+    box-shadow: 0 0 30px rgb(71, 69, 69);
+    border-radius: 15px;
+
+}
+.cards section {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: .6rem;
+    background-color: rgb(22, 68, 22);
+    box-shadow: 0 0 15px rgb(193, 74, 74);
+}
+
+.cards img {
+    border-radius: 15px;
+}
+
+.cards h2 {
+    color: #FAE275;
+    text-shadow: 5px 5px 10px rgb(193, 74, 74);
+}
+
+.cards p {
+    color: wheat;
+    font-size: smaller;
+}
+
+footer {
+    text-align: center;
+}
