@@ -1,0 +1,93 @@
+{
+    "business": [
+        {
+            "name": "Community Healers",
+            "address": "9499 Edgefield St. Hutchinson, KS 67501",
+            "phone": "(620) 926-0441",
+            "website": "https://www.comheal.com",
+            "imageurl": "images/directory/healers.webp",
+            "icon": "images/directory/healers.jpg",
+            "member": "NOP"
+        },
+
+        {
+            "name": "Jon's Rentals",
+            "address": "594 Philmont St. Hutchinson, KS 67502",
+            "phone": "(620) 568-4470",
+            "website": "https://www.jonsrentals.com",
+            "imageurl": "images/directory/jonsrentals.webp",
+            "icon": "images/directory/jonsrentals.jpg",
+            "member": "Bronze"
+        },
+
+        {
+            "name": "Brad's Moving",
+            "address": "8121 South Hickory Street South Hutchinson, KS 67505",
+            "phone": "(620) 579-0547",
+            "website": "https://www.bradmove.com",
+            "imageurl": "images/directory/bradsmove.webp",
+            "icon": "images/directory/bradsmove.jpg",
+            "member": "Bronze"
+        },
+
+        {
+            "name": "Dom's Pizza",
+            "address": "219 Sunset St. Hutchinson, KS 67504",
+            "phone": "(620) 322-6251",
+            "website": "https://www.domspizza.com",
+            "imageurl": "images/directory/domspizza.webp",
+            "icon": "images/directory/domspizza.jpg",
+            "member": "Silver"
+        },
+
+        {
+            "name": "Lifthigh Gym",
+            "address": "81 Valley St. Hutchinson, KS 67501",
+            "phone": "(620) 370-8160",
+            "website": "https://www.liftgym.com",
+            "imageurl": "images/directory/lifthigh.webp",
+            "icon": "images/directory/lifthigh.jpg",
+            "member": "Sliver"
+        },
+
+        {
+            "name": "Soundwave Music",
+            "address": "91 W. Paris Hill Ave. Hutchinson, KS 67502",
+            "phone": "(316) 395-0790",
+            "website": "https://www.swavemusic.com",
+            "imageurl": "images/directory/soundwave.webp",
+            "icon": "images/directory/soundwave.jpg",
+            "member": "Gold"
+        },
+
+        {
+            "name": "Urban Life",
+            "address": "205 North Main St. Hutchinson, KS 67501",
+            "phone": "(316) 940-4698",
+            "website": "https://www.urbanlife.com",
+            "imageurl": "images/directory/urbanlife.webp",
+            "icon": "images/directory/urbanlife.jpg",
+            "member": "Gold"
+        },
+
+        {
+            "name": "Fauget Real Estate",
+            "address": "210 Summit Ave. Hutchinson, KS 67504",
+            "phone": "(785) 674-2442",
+            "website": "https://www.faugetRE.com",
+            "imageurl": "images/directory/faugetre.webp",
+            "icon": "images/directory/faugetre.jpg",
+            "member": "Bronze"
+        },
+
+        {
+            "name": "Flyair",
+            "address": "3203 Airport Rd Hutchinson, KS 67502",
+            "phone": "(785) 978-9674",
+            "website": "https://www.flyair.com",
+            "imageurl": "images/directory/flyair.webp",
+            "icon": "images/directory/flyair.jpg",
+            "member": "Silver"
+        }
+    ]
+}

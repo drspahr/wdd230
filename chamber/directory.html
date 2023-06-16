@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Hutchinson Chamber of Commerce</title>
+    <title>Hutchinson Chamber of Commerce - WDD230</title>
     <!-- Link to fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,33 +51,8 @@
     </header>
 
 <!-- MAIN PAGE AREA -->
-    <main id="joinpg">
-        <h1>Join The Hutchinson <br>Chamber of Commerce</h1>
-        <form method="get" action="thankyou.html">
-            <fieldset class="con">
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" required></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
-                <label class="top">Cell Phone*<input type="tel" name="phone" required></label>
-            </fieldset>
-
-            <fieldset class="bus">
-                <label class="top">Business Title<input type="text" name="title"></label>
-                <label class="top">Business Name*<input type="text" name="business" required></label>
-                <label class="top, darea">Business Description<textarea name="description"></textarea></label>
-            </fieldset>
-
-            <fieldset class="mem">
-                <label class="radio"><input type="radio" name="membership" value="non-profit">  - Not for Profit</label>
-                <label class="radio"><input type="radio" name="membership" value="bronze">  - Bronze Membership</label>
-                <label class="radio"><input type="radio" name="membership" value="silver">  - Silver Membership</label>
-                <label class="radio"><input type="radio" name="membership" value="Gold">  - Gold Membership</label>
-            </fieldset>
-
-            <input type="hidden" id="dateSubmit" name="date">
-
-            <input type="submit" value="Join the Chamber" class="subBtn">
-        </form>
+    <main id="directory">
+        <div class="dirlist"></div>
     </main>
 
 <!-- FOOTER AREA -->
@@ -93,5 +68,6 @@
         <p class="ident">&copy; <span class="year"></span> | David G. Spahr | WDD 230 Project | Last Updated: <span class="moddate"></span></p>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/directory.js"></script>
     </body>
 </html>

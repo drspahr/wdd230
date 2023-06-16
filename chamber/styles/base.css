@@ -79,7 +79,6 @@ nav {
     margin: 0;
     text-align: center;
     padding: 0;
-    /* background-color: #373795; */
     background-image: linear-gradient(to right,#A4B6A8, #5B7160);
 }
 
@@ -396,6 +395,43 @@ form label.top input:required:valid {
     display: block;
     margin: 0 auto;
     text-align: center;
+}
+
+/* Directory Page */
+#directory {
+    display: block;
+}
+
+.dirlist {
+    margin: 2rem .4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: .3rem;
+}
+
+.dirlist section {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-flow: dense;
+    align-items: center;
+    background-color: #8D9D90;
+    color: #FAE275;
+    box-shadow: 3px 3px 5px #373795;
+}
+
+.dirlist div {
+    grid-column: 2/3;
+    align-items: left;
+    font-size: 1rem;
+}
+
+.cinfo a {
+    text-decoration: none;
+    color: #373795;
+}
+
+.dirlist img {
+    border-radius: 10px;
 }
 
 /* Footer */
