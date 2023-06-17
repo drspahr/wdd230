@@ -47,3 +47,19 @@ const displayCompany = (data) => {
         dirList.appendChild(dlist);
     });
 }
+
+const dirlist = document.getElementById("dirlist");
+
+document.addEventListener("click", function (event) {
+    if (!event.target.matches("#list"))
+        return;
+        event.preventDefault();
+        dirlist.classList.add("list");
+});
+
+document.addEventListener("click", function(event) {
+    if (!event.target.matches("#grid"))
+        return;
+        event.preventDefault();
+        dirlist.classList.remove("list");
+});

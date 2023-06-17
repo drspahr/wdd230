@@ -159,6 +159,52 @@
         box-shadow: 0 0 50px #373795;
     }
 
+    /* Main Join */
+    #joinpg {
+        display: block;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+
+    table {
+        display: block;
+        margin: 3rem 5em;
+        box-shadow: 0 0 10px #8D9D90;
+        border-collapse: collapse;
+        font-family: "Prompt", sans-serif;
+    }
+
+    caption {
+        caption-side: bottom;
+        padding: 10px;
+        font-size: .85rem;
+    }
+
+    .title {
+        background-color: #738e79;
+        color: #FAE275;
+        border: thin solid #373795;
+    }
+
+    .headings {
+        background-color: #738e79;
+        color: #D2D0D3;
+    }
+
+    th, td {
+        padding: 7px 15px;
+    }
+
+    .headings, td {
+        border: 1px solid #373795;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #92b299;
+    }
+
     /* Footer */
     footer {
         display: grid;

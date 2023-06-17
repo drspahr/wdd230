@@ -326,12 +326,25 @@ figcaption {
 }
 
 /* Main Join */
+#joinpg {
+    margin-bottom: 2rem;
+}
+#joinpg h2 {
+    color: #373795;
+    text-align: center;
+}
+
+#joinpg div {
+    padding: .5rem 0 .5rem 0;
+}
+
 form {
     max-width: 400px;
     background-color: #8D9D90;
     padding: .5rem 0 .5rem 0;
     border-radius: 20px;
     box-shadow: 0 0 9px #373795;
+    font-family: "Prompt", sans-serif;
 }
 
 form fieldset {
@@ -368,6 +381,7 @@ form label.radio {
     display: block;
     padding: .75rem;
     color: #FAE275;
+    cursor: pointer;
 }
 
 form input.subBtn {
@@ -380,6 +394,7 @@ form input.subBtn {
     background-color: #373795;
     color: #D2D0D3;
     box-shadow: 0 0 9px #D2D0D3;
+    cursor: pointer;
 }
 
 form label.top input:required {
@@ -388,6 +403,10 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: none;
+}
+
+table {
+    display: none;
 }
 
 /* Thank you Page */
@@ -403,10 +422,35 @@ form label.top input:required:valid {
 }
 
 .dirlist {
-    margin: 2rem .4rem;
+    margin: 1rem .4rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: .3rem;
+
+    /* List styling */
+    &.list img {
+        display: none;
+    }
+
+    &.list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &.list section {
+        display: inline;
+        margin: 0;
+        padding: .25rem;
+        box-shadow: none;
+    }
+
+    &.list .cinfo a {
+        display: none;
+    }
+
+    &.list section:nth-child(even) {
+        background-color: #A4B6A8;
+    }
 }
 
 .dirlist section {
@@ -425,13 +469,31 @@ form label.top input:required:valid {
     font-size: 1rem;
 }
 
+.dirlist img {
+    border-radius: 10px;
+}
+
 .cinfo a {
     text-decoration: none;
     color: #373795;
 }
 
-.dirlist img {
-    border-radius: 10px;
+.buttons {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #8D9D90;
+    border-radius: 20px;
+}
+
+.buttons button {
+    padding: 1rem;
+    font-weight: 700;
+    border-radius: 15px;
+    background-color: #373795;
+    color: #D2D0D3;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -441,6 +503,7 @@ footer {
     background-image: linear-gradient(#8D9D90, #738e79);
     border-radius: 18px;
     padding-top: .6rem;
+    font-family: "Prompt", sans-serif;
 }
 
 .ftlogo {
