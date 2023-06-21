@@ -233,6 +233,18 @@ main p {
     border-bottom: 1px solid #FAE275;
 }
 
+.source {
+    font-size: .6rem;
+}
+
+.source strong {
+    color: #373795;
+}
+
+#descr {
+    text-transform: capitalize;
+}
+
 #spots {
     grid-template-columns: 1fr;
     align-items: center;
@@ -339,12 +351,13 @@ figcaption {
 }
 
 form {
-    max-width: 400px;
+    width: 400px;
     background-color: #8D9D90;
     padding: .5rem 0 .5rem 0;
     border-radius: 20px;
     box-shadow: 0 0 9px #373795;
     font-family: "Prompt", sans-serif;
+    margin: 0 auto;
 }
 
 form fieldset {
@@ -382,6 +395,10 @@ form label.radio {
     padding: .75rem;
     color: #FAE275;
     cursor: pointer;
+}
+
+.mem {
+    font-size: 1.6rem;
 }
 
 form input.subBtn {
@@ -465,7 +482,6 @@ table {
 
 .dirlist div {
     grid-column: 2/3;
-    align-items: left;
     font-size: 1rem;
 }
 

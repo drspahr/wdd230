@@ -31,34 +31,34 @@ clsBan.addEventListener('click', () => {
 });
 
 // Visit counter
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-const visitDisplay = document.querySelector(".visits");
+// let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+// const visitDisplay = document.querySelector(".visits");
 
-if (numVisits != 0) {
-    visitDisplay.textContent = numVisits;
-} else {
-    visitDisplay.textContent = `This is your first visit. Welcome!`;
-}
+// if (numVisits != 0) {
+//     visitDisplay.textContent = numVisits;
+// } else {
+//     visitDisplay.textContent = `This is your first visit. Welcome!`;
+// }
 
-numVisits ++;
-localStorage.setItem("numVisits-ls", numVisits);
-let pDay = Date.now();
-localStorage.setItem("pDay-ls", pDay);
+// numVisits ++;
+// localStorage.setItem("numVisits-ls", numVisits);
+// let pDay = Date.now();
+// localStorage.setItem("pDay-ls", pDay);
 
-// Days since last visit
-const msToDays = 84600000;
-const vtoday = Date.now();
-const dayCount = document.querySelector(".lvisit");
+// // Days since last visit
+// const msToDays = 84600000;
+// const vtoday = Date.now();
+// const dayCount = document.querySelector(".lvisit");
 
-pDay = Number(window.localStorage.getItem("pDay-ls"));
-let dayDiff = (vtoday - pDay) / msToDays;
-localStorage.setItem("dayDiff-ls", dayDiff)
+// pDay = Number(window.localStorage.getItem("pDay-ls"));
+// let dayDiff = (vtoday - pDay) / msToDays;
+// localStorage.setItem("dayDiff-ls", dayDiff)
 
-if (dayDiff < 1) {
-    dayCount.textContent = 0;
-} else {
-    dayCount.textContent = `${dayDiff.toFixed(0)} days`;
-}
+// if (dayDiff < 1) {
+//     dayCount.textContent = 0;
+// } else {
+//     dayCount.textContent = `${dayDiff.toFixed(0)} days`;
+// }
 
 
 

@@ -172,8 +172,9 @@
         display: block;
         margin: 3rem 5em;
         box-shadow: 0 0 10px #8D9D90;
-        border-collapse: collapse;
+        border-collapse: separate;
         font-family: "Prompt", sans-serif;
+        border-radius: 20px;
     }
 
     caption {
@@ -185,7 +186,7 @@
     .title {
         background-color: #738e79;
         color: #FAE275;
-        border: thin solid #373795;
+        /* border: thin solid #373795; */
     }
 
     .headings {
