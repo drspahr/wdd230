@@ -25,3 +25,7 @@ body p, h1, h2, img, figcaption {
 figcaption {
     text-transform: capitalize;
 }
+
+.source {
+    font-size: .5rem;
+}
