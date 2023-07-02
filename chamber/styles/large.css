@@ -155,4 +155,9 @@
     .dirlist div {
         padding-left: .7rem;
     }
+
+    /* Contact */
+    .contactinfo {
+        font-size: 2rem;
+    }
 }

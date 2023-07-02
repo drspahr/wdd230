@@ -445,10 +445,21 @@ form label.top input:required:valid {
     border-left: none;
 }
 
+table {
+    display: none;
+}
+
 /* Contact Page */
 #maincontact {
     margin: 2rem auto;
 }
+
+#maincontact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #373795;
+}
+
 .msgarea textarea {
     height: 9rem;
 }
@@ -460,8 +471,21 @@ form label.msgarea textarea:required:valid {
     border-left: none;
 }
 
-table {
-    display: none;
+.contactinfo {
+    margin: 2rem auto;
+    background-color: #8D9D90;
+    color: #FAE275;
+    padding: 0 1rem 0 1rem;
+    box-shadow: 0 0 9px #373795;
+}
+
+.office {
+    border-top: 1px solid #FAE275;
+    border-bottom: 1px solid #FAE275;
+}
+
+.cnt h3 {
+    text-shadow: 3px 3px 5px #373795;
 }
 
 /* Thank you Page */

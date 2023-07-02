@@ -30,6 +30,16 @@ clsBan.addEventListener('click', () => {
     document.querySelector(".banner").style.display="none";
 }); 
 
+const actBtn = document.querySelector(".action");
+actBtn.addEventListener('click', () => {
+    location.href = "join.html";
+});
+
+const jnBtn = document.querySelector(".joinBtn");
+jnBtn.addEventListener('click', () => {
+    location.href = "join.html";
+});
+
 // Spotlight
 const cmpInfo = "json/data.json";
 
