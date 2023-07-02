@@ -126,6 +126,10 @@
         grid-row: 4/5;
     }
 
+    .contact {
+        font-size: .8rem;
+    }
+
     /* Main Join */
     #joinpg {
         display: grid;

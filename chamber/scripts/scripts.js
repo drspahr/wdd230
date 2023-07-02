@@ -62,14 +62,15 @@ const displayCmpInfo = (data) => {
         genPara.setAttribute("class", "pspot");
         cmpInfo.setAttribute("class", "contact");
 
+        logo.setAttribute("class", "images");
         logo.setAttribute("src", item.icon);
         logo.setAttribute("alt", `Logo of ${item.name}`);
         logo.setAttribute("loading", "lazy");
 
         // Set the h3 header, website, phone, and genPara
-        genPara.textContent = "lorem 6";
+        genPara.textContent = "lorem6";
         nameHead.textContent = item.name;
-        webInfo.inneHTML = `<a href="${item.website}">${item.website}</a>`
+        webInfo.textContent = item.website;
         phoneInfo.textContent = item.phone;
 
         // Append web and phone to cmpInfo

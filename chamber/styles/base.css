@@ -270,6 +270,11 @@ main p {
     padding-bottom: .8rem;
 }
 
+.images {
+    width: 80px;
+    height: 80px;
+}
+
 .color {
     background-color: #738e79;
     border-radius: 18px;
