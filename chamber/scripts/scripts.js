@@ -30,6 +30,66 @@ clsBan.addEventListener('click', () => {
     document.querySelector(".banner").style.display="none";
 }); 
 
+// Spotlight
+const cmpInfo = "json/data.json";
+
+async function getCmpInfo(cmpInfo) {
+    const response = await fetch(cmpInfo);
+    if(response.ok) {
+        const cmpData = await response.json();
+        displayCmpInfo(cmpData.business);
+    }
+}
+
+getCmpInfo(cmpInfo);
+
+const displayCmpInfo = (data) => {
+    let divSpot = "1";
+    data.forEach((item) => {
+       if (item.member == "Gold" || item.member == "Silver" && divSpot < 4) {
+        // Create elements
+        let divSpots = document.querySelector("#spots");
+        let spotDiv = document.createElement("div");
+        let nameHead = document.createElement("h3");
+        let logo = document.createElement("img");
+        let genPara = document.createElement("p");
+        let cmpInfo = document.createElement("div");
+        let webInfo = document.createElement("p");
+        let phoneInfo = document.createElement("p");
+
+        // Set element attributes
+        spotDiv.setAttribute("class", `spot${divSpot} color`);
+        genPara.setAttribute("class", "pspot");
+        cmpInfo.setAttribute("class", "contact");
+
+        logo.setAttribute("src", item.icon);
+        logo.setAttribute("alt", `Logo of ${item.name}`);
+        logo.setAttribute("loading", "lazy");
+
+        // Set the h3 header, website, phone, and genPara
+        genPara.textContent = "lorem 6";
+        nameHead.textContent = item.name;
+        webInfo.inneHTML = `<a href="${item.website}">${item.website}</a>`
+        phoneInfo.textContent = item.phone;
+
+        // Append web and phone to cmpInfo
+        cmpInfo.appendChild(webInfo);
+        cmpInfo.appendChild(phoneInfo);
+
+        // Append all elements to spotDiv
+        spotDiv.appendChild(nameHead);
+        spotDiv.appendChild(logo);
+        spotDiv.appendChild(genPara);
+        spotDiv.appendChild(cmpInfo);
+
+        // Append to #spots
+        divSpots.appendChild(spotDiv);
+
+        divSpot ++;
+       } 
+    });
+}
+
 // Visit counter
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 const visitDisplay = document.querySelector(".visits");

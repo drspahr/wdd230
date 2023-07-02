@@ -388,13 +388,13 @@ form fieldset {
     box-shadow: 0 0 9px #FAE275;
 }
 
-form label.top, form label.darea {
+form label.top, form label.darea, form label.msgarea {
     display: block;
     padding-top: 1rem;
     color: #FAE275;
 }
 
-.top input, .darea textarea{
+.top input, .darea textarea, .msgarea textarea {
     display: block;
     padding: .75rem;
     width: 90%;
@@ -437,6 +437,21 @@ form label.top input:required {
 }
 
 form label.top input:required:valid {
+    border-left: none;
+}
+
+/* Contact Page */
+#maincontact {
+    margin: 2rem auto;
+}
+.msgarea textarea {
+    height: 9rem;
+}
+form label.msgarea textarea:required {
+    border-left: 10px solid rgb(103, 40, 40);
+}
+
+form label.msgarea textarea:required:valid {
     border-left: none;
 }
 

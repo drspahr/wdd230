@@ -51,77 +51,20 @@
     </header>
 
 <!-- MAIN PAGE AREA -->
-    <main id="joinpg">
-        <div id="jnh2">
-            <h2>Join The Hutchinson</h2>
-            <h2>Chamber of Commerce</h2>
+    <main id="maincontact">
+        <div id="conpg">
+            
         </div>
         <form method="get" action="thankyou.html">
             <fieldset class="con">
                 <label class="top">First Name*<input type="text" name="fname" required></label>
                 <label class="top">Last Name*<input type="text" name="lname" required></label>
                 <label class="top">Email*<input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
-                <label class="top">Cell Phone*<input type="tel" name="phone" required></label>
+                <label class="top, msgarea">Leave your Message*<textarea name="description" required></textarea></label>
             </fieldset>
 
-            <fieldset class="bus">
-                <label class="top">Business Title<input type="text" name="title"></label>
-                <label class="top">Business Name*<input type="text" name="business" required></label>
-                <label class="top, darea">Business Description<textarea name="description"></textarea></label>
-            </fieldset>
-
-            <fieldset class="mem">
-                <label class="radio"><input type="radio" name="membership" value="non-profit">  - Not for Profit</label>
-                <label class="radio"><input type="radio" name="membership" value="bronze">  - Bronze Membership</label>
-                <label class="radio"><input type="radio" name="membership" value="silver">  - Silver Membership</label>
-                <label class="radio"><input type="radio" name="membership" value="Gold">  - Gold Membership</label>
-            </fieldset>
-
-            <input type="hidden" id="dateSubmit" name="date">
-
-            <input type="submit" value="Join the Chamber" class="subBtn">
+            <input type="submit" value="Send Message" class="subBtn">
         </form>
-
-        <table id="memtable">
-            <caption>Table 1: Membership Levels</caption>
-            <thead>
-                <tr class="title">
-                    <th colspan="4" scope="colgroup">Membership Comparison</th>
-                </tr>
-                <tr>
-                    <th class="headings" scope="col">Level</th>
-                    <th class="headings" scope="col">Price</th>
-                    <th class="headings" scope="col">Marketing</th>
-                    <th class="headings" scope="col">Policy Meetings</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Not for Profit</td>
-                    <td>$0.00</td>
-                    <td>3 Month/Yr Digital</td>
-                    <td>N/A</td>
-                </tr>
-                <tr>
-                    <td>Bronze</td>
-                    <td>$1,000.00</td>
-                    <td>6 Months Digital</td>
-                    <td>Executive Annual Evening with Board of Directors</td>
-                </tr>
-                <tr>
-                    <td>Silver</td>
-                    <td>$3,000.00</td>
-                    <td>Year Round Digital</td>
-                    <td>Invitation to Annaul Economic Devlopment Breakfast</td>
-                </tr>
-                <tr>
-                    <td>Gold</td>
-                    <td>$5,000.00</td>
-                    <td>Premium Home Page Spotlight</td>
-                    <td>Executive Invitation to meet Legislatures</td>
-                </tr>
-            </tbody>
-        </table>
     </main>
 
 <!-- FOOTER AREA -->

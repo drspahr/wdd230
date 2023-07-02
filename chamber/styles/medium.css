@@ -169,7 +169,7 @@
     }
 
     table {
-        display: block;
+        display: table;
         margin: 3rem 5em;
         box-shadow: 0 0 10px #8D9D90;
         border-collapse: separate;
@@ -186,7 +186,7 @@
     .title {
         background-color: #738e79;
         color: #FAE275;
-        /* border: thin solid #373795; */
+        border-radius: 20px;
     }
 
     .headings {
