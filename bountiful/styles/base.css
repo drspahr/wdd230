@@ -1,0 +1,119 @@
+/* font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+body {
+    font-size: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+nav {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    width: 75%;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.contact {
+    display: none;
+}
+
+#bountNav {
+    list-style-type: none;
+    font-size: 2rem;
+    padding-right: 2rem;
+    margin-top: .5rem;
+}
+
+#bountNav a, .socialMed a {
+    text-decoration: none;
+    color: black;
+}
+
+.social {
+    display: inline-block;
+    width: 10%;
+    height: auto;
+    padding: 0 .3rem 0 .3rem;
+}
+
+#menuBtn span:nth-child(1) {
+    display: block;
+    font-size: 4.6rem;
+}
+
+#menuBtn span:nth-child(2) {
+    display: none;
+}
+
+#menuBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#menuBtn.open span:nth-child(2) {
+    display: block;
+    font-size: 2.6rem;
+    margin-top: 1.3rem;
+}
+
+/* MENU CONTROL */
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.actionBtn {
+    display: block;
+    text-align: center;
+}
+
+#weather {
+    text-align: center;
+}
+
+#conIcon {
+    display: block;
+    margin: 0 auto;
+}
+
+#descr {
+    text-transform: capitalize;
+}
+
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.footImg {
+    border-radius: 50%;
+    border: 1px solid black;
+}

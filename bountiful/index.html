@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+
+<!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- STYLES -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/bountiful foods.png" alt="Bountiful Foods Logo">
+        <div class="specials"><span class="spc"></span></div>
+        <div class="contact">
+            <h3>Bountiful Foods</h3>
+            <p class="address">555 Moderna St.<br>Carlsbad, CA 22222<br></p>
+            <p class="contactinfo">General Office (505) 555-5555<br>Customer Service (505) 555-5555<br>email service@bountifulfoods.com</p>
+        </div>
+        <nav>
+            <buttom id="menuBtn"><span>&#9776;</span><span>X</span></buttom>
+            <ul id="bountNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="socialMed">
+                <a href="https://facebook.com" target="_blank">
+                    <img class="social" src="images/facebook_100.png" alt="Facebook logo">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img class="social" src="images/instagram_100.png" alt="Instagram logo">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="social" src="images/twitter_100.png" alt="Twitter logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="ttl">
+            <h1>BOUNTIFUL FOODS</h1>
+            <buttom class="actionBtn">Place Your Fresh Order Now!!</buttom>
+        </div>
+        <section id="weather">
+            <h3>Current Condtions</h3><br><span id="location"></span>
+            <img id="conIcon" src="#" alt="#"><p><span id="descr"></span></p>
+            <p><span id="temp"></span> &deg;F / <span id="hum"></span> &percnt;</p>
+            <div id="foreDes">
+                <p>3 Day Temperature Forecast</p><br><span id="forecast"></span>
+            </div>
+        </section>
+
+        <section id="info">
+
+        </section>
+
+        <section id="summary">
+
+        </section>
+    </main>
+
+    <footer>
+        <img class="footImg" src="images/bountfoods_100.png" alt="Bountiful Foods Logo">
+        <div id="modified">
+            <p class="final">&copy; <span class="yr"></span> | Last Modified: <span class="modDate"></span> | Site Created By: David Spahr</p>
+        </div>
+    </footer>
+
+    <script src="scripts/common.js"></script>  
+    <script src="scripts/weather.js"></script>  
+</body>
+</html>
