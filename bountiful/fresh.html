@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh</title>
+    <title>Fresh Order</title>
 
 <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,13 +12,14 @@
 
 <!-- STYLES -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">    
+    <link rel="stylesheet" href="styles/base.css">  
+    <link rel="stylesheet" href="styles/large.css">  
 </head>
 
 <body>
 
     <header>
-        <img src="images/bountiful foods.png" alt="Bountiful Foods Logo">
+        <img class="logo" src="images/bountiful foods.png" alt="Bountiful Foods Logo">
         <div class="specials"><span class="spc"></span></div>
         <div class="contact">
             <h3>Bountiful Foods</h3>
@@ -47,15 +48,45 @@
     </header>
 
     <main>
+        <h1>FRESH FRUIT ORDER</h1>
+        <form method="get">
+            <fieldset class="contactinfo">
+                <legend><strong>Contact Information</strong></legend>
+                <label class="fld">First Name*<input type="text" name="firstname" id="fname" required></label>
+                <label class="fld">Email*<input type="email" name="email" id="e_mail" required></label>
+                <label class="fld">Phone*<input type="tel" name="phone" id="phoneNum" required></label>
+            </fieldset>
 
+            <fieldset class="fruitsel">
+                <legend><strong>Select Up To 3 Fruits</strong></legend>
+                <label class="fld">First fruit<input list="fruits" name="fruit1" id="f1"></label>
+                <label class="fld">Second fruit<input list="fruits" name="fruit2" id="f2"></label>
+                <label class="fld">Third fruit<input list="fruits" name="fruit3" id="f3"></label>
+                <datalist id="fruits">
+                    <span id="loptions"></span>
+                </datalist>
+            </fieldset>
+
+            <fieldset class="specinstruc">
+                <legend><strong>Optional</strong></legend>
+                <label class="tarea">Special Instructions<textarea name="instructions" id="spIn"></textarea></label>
+            </fieldset>
+
+            <button id="formsub"><strong>Place Order</strong></button>
+        </form>
+
+        <div id="dsplorder"></div>
     </main>
 
     <footer>
         <img class="footImg" src="images/bountfoods_100.png" alt="Bountiful Foods Logo">
+        <a class="ref" href="resource.html">Resources</a>
         <div id="modified">
-            <p class="final">&copy; <span class="yr"></span> -=|=- Last Modified: <span class="modDate"> -=|=- Site Created By: David Spahr</span></p>
+            <p class="final">&copy; <span class="yr"></span> | Last Modified: <span class="modDate"></span> | Site Created By: David Spahr</p>
         </div>
     </footer>
     
+    <script src="scripts/common.js"></script>
+    <script src="scripts/fruit.js"></script>
 </body>
 </html>

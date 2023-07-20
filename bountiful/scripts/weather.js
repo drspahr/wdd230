@@ -16,9 +16,9 @@ async function getCurrentWeather() {
             const data = await response.json();
             const data2 = await responsef.json();
             console.log(data);
-            console.log(data2);
+            console.log(data2.list);
             displayCurrentWeather(data);
-            displayForecast(data2);
+            displayThreeDay(data2.list);
         } else {
             throw Error(await response.text());
         }
@@ -42,33 +42,31 @@ function displayCurrentWeather(curData) {
     curIcon.setAttribute("alt", `${curData.weather[0].description}`);
 }
 
-const displayForecast = (forecast) => {
+function displayThreeDay(data) {
     const fcast = document.querySelector("#forecast");
-    let pos = 12;
 
-    forecast.forEach((forecast) => {
-        if (forecast.list.indexOf(12) || forecast.list.indexOf(20) || forecast.list.indexOf(28)) {
+    data.forEach((data) => {
             // Create needed elements
             const fdiv = document.createElement("div");
     
             let fdate = document.createElement("p");
-            let ftemp = documenmt.createElement("h3");
+            let ftemp = document.createElement("h3");
             let ficon = document.createElement("img");
             let fdes = document.createElement("p");
 
             // Set values
-            fdate.textContent = forecast.list[pos].dt_text;
-            ftemp.textContent = forecast.list[pos].main.temp;
-            fdes.textContent = forecast.list[pos].weather[0].description;
+            fdate.textContent = data.dt_text;
+            ftemp.textContent = data.main.temp;
+            fdes.textContent = data.weather[0].description;
 
             // Set div attribute
             fdiv.setAttribute("class", "card");
 
             // Set icon attributes
-            const fIconSrc = `https://openweathermap.org/img/wn/${forecast.list[pos].weather[0].icon}@2x.png`;
+            const fIconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
             ficon.setAttribute("src", fIconSrc);
-            ficon.setAttribute("alt", `${forecast.list[pos].weather[0].description}`);
+            ficon.setAttribute("alt", `${data.weather[0].description}`);
 
             // Append to div and append div to #forecast
             fdiv.appendChild(fdate);
@@ -77,8 +75,5 @@ const displayForecast = (forecast) => {
             fdiv.appendChild(fdes);
 
             fcast.appendChild(fdiv);
-
-            pos += 8;
-        }
     });
 }

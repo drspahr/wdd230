@@ -13,12 +13,13 @@
 <!-- STYLES -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">    
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
 
     <header>
-        <img src="images/bountiful foods.png" alt="Bountiful Foods Logo">
+        <img class="logo" src="images/bountiful foods.png" alt="Bountiful Foods Logo">
         <div class="specials"><span class="spc"></span></div>
         <div class="contact">
             <h3>Bountiful Foods</h3>
@@ -47,15 +48,31 @@
     </header>
 
     <main>
-
+        <h1><strong>ABOUT US</strong></h1>
+        <div id="aboutus">
+            <h3><strong>History</strong></h3>
+            <p>
+                Twenty years ago, we started out as an organic fruit grower. We supplied several local grocery chains and restaurants. We were known for high quality excellant tasting products. Over the years we built greenhouses to expand our offerings. Ten years ago we took a chance and purchased our first food truck. This was an experiement to see if the general public would be interested in customer specified mixed fruit drinks. 
+            </p>
+            <h3><strong>Today</strong></h3>
+            <p>
+                Today we operate thirty trucks throughout southern and central California. We continue to supply restaurants and grocers with high quality certified organic fruits. Our business has expanded to the international market as well. The future is bright and we look forward to bring you the best in organic fruit for all your eating needs.
+            </p>
+        </div>
+        <div id="map">
+            <img class="mapimg" src="images/carlsbadca.png" alt="Carlsbad, CA Map">
+            <a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1214924,-117.3702032,12z/data=!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu"><strong>Location</strong></a>
+        </div>
     </main>
 
     <footer>
         <img class="footImg" src="images/bountfoods_100.png" alt="Bountiful Foods Logo">
+        <a class="ref" href="resource.html">Resources</a>
         <div id="modified">
-            <p class="final">&copy; <span class="yr"></span> -=|=- Last Modified: <span class="modDate"> -=|=- Site Created By: David Spahr</span></p>
+            <p class="final">&copy; <span class="yr"></span> | Last Modified: <span class="modDate"></span> | Site Created By: David Spahr</p>
         </div>
     </footer>
     
+    <script src="scripts/common.js"></script>
 </body>
 </html>

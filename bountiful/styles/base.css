@@ -1,10 +1,16 @@
-/* font-family: 'Merriweather Sans', sans-serif;
-font-family: 'Ubuntu', sans-serif; */
-
 body {
     font-size: 16px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #f3fad8;
+}
+
+h1, h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3, p, a {
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 /* HEADER */
@@ -17,11 +23,13 @@ header {
 
 nav {
     text-align: center;
+    margin-top: 2rem;
+    border-bottom: 1px solid #93B5C6;
 }
 
 .logo {
     display: block;
-    width: 75%;
+    width: 70%;
     height: auto;
     margin-top: 2rem;
     border-radius: 50%;
@@ -41,19 +49,40 @@ nav {
 
 #bountNav a, .socialMed a {
     text-decoration: none;
-    color: black;
+    color: #73abc8;
+}
+
+#bountNav li {
+    line-height: 1.5;
+}
+
+#bountNav a:hover {
+    background-color: #D7816A;
+    color: #F0CF65;
 }
 
 .social {
     display: inline-block;
     width: 10%;
     height: auto;
-    padding: 0 .3rem 0 .3rem;
+    padding: 0 .3rem 2rem .3rem;
+}
+
+/* MENU CONTROL */
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
 }
 
 #menuBtn span:nth-child(1) {
     display: block;
     font-size: 4.6rem;
+    text-shadow: 2px 2px #F0CF65;
+    color: #D7816A;
+    cursor: pointer;
 }
 
 #menuBtn span:nth-child(2) {
@@ -68,28 +97,60 @@ nav {
     display: block;
     font-size: 2.6rem;
     margin-top: 1.3rem;
+    color: #BD4F6C;
+    cursor: pointer;
 }
 
-/* MENU CONTROL */
-nav ul {
-    display: none;
+form label.fld input:required {
+    border-left: 10px solid #BD4F6C;
 }
 
-nav ul.open {
-    display: block;
+form label.fld input:required:valid {
+    border-left: none;
 }
 
-/* MAIN */
+/* MAIN-HOME PAGE */
 main {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
+    margin-top: 2rem;
+}
+
+h1 {
+    text-shadow: 2px 2px #F0CF65;
+    color: #D7816A;
+}
+
+h3 {
+    text-shadow: 2px 2px #D7816A;
+    color: #F0CF65;
+}
+
+.sec {
+    margin-top: 1.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px #BD4F6C;
+    background-color: #DDEDAA;
+}
+
+.sec p, #location {
+    color: #93B5C6;
 }
 
 .actionBtn {
     display: block;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    background-color: #F0CF65;
+    color: #D7816A;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #BD4F6C;
+    padding: 1rem;
+    cursor: pointer;
 }
 
 #weather {
@@ -105,15 +166,122 @@ main {
     text-transform: capitalize;
 }
 
+/* FORM */
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+form fieldset {
+    margin: 1.2rem 1.5rem 1.2rem 1.5rem;
+    background-color: #DDEDAA;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px #BD4F6C;
+}
+
+form label.fld {
+    display: block;
+    padding-top: 1rem;
+}
+
+form label {
+    color: #BD4F6C;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.fld input {
+    display: block;
+    padding: .75rem;
+    width: 80%;
+    background-color: #f3fad8;
+    border: none;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+form legend {
+    text-shadow: 2px 2px #F0CF65;
+    color: #BD4F6C;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tarea textarea {
+    display: block;
+    height: 8rem;
+    width: 87%;
+    border: none;
+    background-color: #f3fad8;
+}
+
+#formsub {
+    border: none;
+    padding: .75rem 1.5rem;
+    margin: 1rem 1.4rem 1rem 1.4rem;
+    width: 89%;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    background-color: #F0CF65;
+    color: #D7816A;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #BD4F6C;
+    cursor: pointer;
+}
+
+/* ABOUT */
+#aboutus {
+    text-align: center;
+    color: #93B5C6;
+    margin: 0 1.2rem 0 1.2rem;
+}
+
+.mapimg {
+    display: block;
+}
+
+#map {
+    margin-top: 2rem;
+}
+
+#map a {
+    margin-top: 1.2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #93B5C6;
+}
+
 /* FOOTER */
 footer {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
+    margin-top: 2rem;
+    background-color: #DDEDAA;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .footImg {
+    margin-top: 2rem;
     border-radius: 50%;
     border: 1px solid black;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin-top: .8rem;
+    font-size: 1.2rem;
+    color: #93B5C6;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#modified {
+    margin-top: .7rem;
+    font-size: .6rem;
 }

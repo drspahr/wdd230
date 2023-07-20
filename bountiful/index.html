@@ -13,6 +13,7 @@
 <!-- STYLES -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
@@ -49,10 +50,10 @@
     <main>
         <div id="ttl">
             <h1>BOUNTIFUL FOODS</h1>
-            <buttom class="actionBtn">Place Your Fresh Order Now!!</buttom>
+            <buttom class="actionBtn"><strong>Place Your Fresh Order Now!!</strong></buttom>
         </div>
-        <section id="weather">
-            <h3>Current Condtions</h3><br><span id="location"></span>
+        <section id="weather" class="sec">
+            <h3>Current Condtions</h3><span id="location"></span>
             <img id="conIcon" src="#" alt="#"><p><span id="descr"></span></p>
             <p><span id="temp"></span> &deg;F / <span id="hum"></span> &percnt;</p>
             <div id="foreDes">
@@ -60,17 +61,25 @@
             </div>
         </section>
 
-        <section id="info">
-
+        <section id="info" class="sec">
+            <h3>Purchase History</h3>
+            <span id="purchase"></span>
         </section>
 
-        <section id="summary">
-
+        <section id="summary" class="sec">
+            <h3>Welcome to Carlsbad, CA</h3>
+            <div id="stats">
+                <p>Population: 115,761</p>
+                <p>Population Density: 3,066.5/sq mile</p>
+                <p>Average Income: $150,569</p>
+                <p>Median Age: 41.8 years</p>
+            </div>
         </section>
     </main>
 
     <footer>
         <img class="footImg" src="images/bountfoods_100.png" alt="Bountiful Foods Logo">
+        <a class="ref" href="resource.html">Resources</a>
         <div id="modified">
             <p class="final">&copy; <span class="yr"></span> | Last Modified: <span class="modDate"></span> | Site Created By: David Spahr</p>
         </div>

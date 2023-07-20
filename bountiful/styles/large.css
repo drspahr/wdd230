@@ -1,0 +1,42 @@
+@media only screen and (min-width: 37em) {
+    header {
+        grid-template-columns: 20% 1fr 1fr;
+    }
+
+    .contact {
+        display: block;
+        text-align: right;
+    }
+
+    .logo {
+        grid-column: 1/2;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    #menuBtn {
+        display: none;
+    }
+
+    nav {
+        grid-column: 1/4;
+    }
+
+    #bountNav {
+        display: block;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #bountNav li {
+        float: left;
+    }
+
+    #bountNav li a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+    }
+}
